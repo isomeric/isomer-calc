@@ -17,7 +17,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-from hfos.tool.templates import insert_nginx_service
+from isomer.tool.templates import insert_nginx_service
 
 __author__ = "Heiko 'riot' Weinen"
 __license__ = "AGPLv3"
@@ -78,9 +78,9 @@ This software package is a plugin module for HFOS.
           'develop': PostDevelop,
           'install': PostInstall
       },
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     spreadsheetwatcher=hfos.calc.spreadsheetwatcher:SpreadsheetWatcher
-    [hfos.schemata]
+    [isomer.schemata]
     spreadsheet=hfos.calc.schemata.spreadsheet:Spreadsheet
     """,
       test_suite="tests.main.main",

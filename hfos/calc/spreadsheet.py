@@ -34,8 +34,8 @@ Definition of a spreadsheet object to represent EtherCalc documents.
 
 """
 
-from hfos.schemata.base import base_object
-from hfos.schemata.defaultform import defaultform
+from isomer.schemata.base import base_object
+from isomer.schemata.defaultform import defaultform
 
 SpreadsheetSchema = base_object('spreadsheet', all_roles='crew')
 
