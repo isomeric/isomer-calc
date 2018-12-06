@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -54,34 +54,34 @@ class PostDevelop(develop):
         insert_service()
 
 
-setup(name="hfos-calc",
+setup(name="isomer-calc",
       version="0.0.1",
-      description="hfos-calc",
-      author="Hackerfleet Community",
+      description="isomer-calc",
+      author="Isomer Community",
       author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/hfos-calc",
+      url="https://github.com/isomeric/isomer-calc",
       license="GNU Affero General Public License v3",
       packages=find_packages(),
-      long_description="""HFOS - Calc
-===========
+      long_description="""Isomer - Calc
+=============
 
-A module to seamlessly integrate EtherCalc into HFOS.
+A module to seamlessly integrate EtherCalc into Isomer.
 
-This software package is a plugin module for HFOS.
+This software package is a plugin module for Isomer.
 """,
       dependency_links=[
       ],
       install_requires=[
-          'hfos>=1.2.0',
+          'isomer>=1.0.0',
       ],
       cmdclass={
           'develop': PostDevelop,
           'install': PostInstall
       },
       entry_points="""[isomer.components]
-    spreadsheetwatcher=hfos.calc.spreadsheetwatcher:SpreadsheetWatcher
+    spreadsheetwatcher=isomer.calc.spreadsheetwatcher:SpreadsheetWatcher
     [isomer.schemata]
-    spreadsheet=hfos.calc.schemata.spreadsheet:Spreadsheet
+    spreadsheet=isomer.calc.schemata.spreadsheet:Spreadsheet
     """,
       test_suite="tests.main.main",
       )

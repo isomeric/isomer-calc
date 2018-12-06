@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -31,11 +31,11 @@ Module: SpreadsheetWatcher
 """
 
 from isomer.component import ConfigurableComponent
-from isomer.logger import warn  # , hfoslog, error, critical
+from isomer.logger import warn  # , isomerlog, error, critical
 
-# from hfos.database import objectmodels
+# from isomer.database import objectmodels
 # from datetime import datetime
-# from hfos.events.system import updatesubscriptions, send
+# from isomer.events.system import updatesubscriptions, send
 
 
 class SpreadsheetWatcher(ConfigurableComponent):
