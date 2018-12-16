@@ -54,34 +54,35 @@ class PostDevelop(develop):
         insert_service()
 
 
-setup(name="isomer-calc",
-      version="0.0.1",
-      description="isomer-calc",
-      author="Isomer Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/isomeric/isomer-calc",
-      license="GNU Affero General Public License v3",
-      packages=find_packages(),
-      long_description="""Isomer - Calc
+setup(
+    name="isomer-calc",
+    version="0.0.1",
+    description="isomer-calc",
+    author="Isomer Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/isomeric/isomer-calc",
+    license="GNU Affero General Public License v3",
+    packages=find_packages(),
+    long_description="""Isomer - Calc
 =============
 
-A module to seamlessly integrate EtherCalc into Isomer.
+Seamlessly integrate EtherCalc into Isomer.
 
 This software package is a plugin module for Isomer.
 """,
-      dependency_links=[
-      ],
-      install_requires=[
-          'isomer>=1.0.0',
-      ],
-      cmdclass={
-          'develop': PostDevelop,
-          'install': PostInstall
-      },
-      entry_points="""[isomer.components]
+    dependency_links=[
+    ],
+    install_requires=[
+        'isomer>=1.0.0',
+    ],
+    cmdclass={
+        'develop': PostDevelop,
+        'install': PostInstall
+    },
+    entry_points="""[isomer.components]
     spreadsheetwatcher=isomer.calc.spreadsheetwatcher:SpreadsheetWatcher
     [isomer.schemata]
     spreadsheet=isomer.calc.schemata.spreadsheet:Spreadsheet
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
