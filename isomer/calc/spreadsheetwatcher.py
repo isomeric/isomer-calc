@@ -3,7 +3,7 @@
 
 # Isomer Application Framework
 # ============================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -32,6 +32,7 @@ Module: SpreadsheetWatcher
 
 from isomer.component import ConfigurableComponent
 from isomer.logger import warn  # , isomerlog, error, critical
+
 
 # from isomer.database import objectmodels
 # from datetime import datetime
