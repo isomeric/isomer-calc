@@ -52,7 +52,7 @@ class CalcCtrl {
             this.protocol = 'http';
         }
 
-        this.hostname =  this.protocol + '://' + socket.host;
+        this.hostname = this.protocol + '://' + socket.host;
 
         if ((this.protocol === 'https' && socket.port !== 443) || (this.protocol === 'http' && socket.port !== 80)) {
             this.hostname += ':' + socket.port;
@@ -83,7 +83,7 @@ class CalcCtrl {
 
         this.iframe_url = this.hostname + this.sheetname;
 
-        this.rootscope.$on('User.Login', function() {
+        this.rootscope.$on('User.Login', function () {
             self.request_sheets();
         });
 

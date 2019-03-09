@@ -26,7 +26,7 @@ import icon from './assets/iconmonstr-chart-5.svg';
 
 
 export function routing($stateProvider) {
-    
+
     $stateProvider
         .state('app.calc', {
             url: '/calc',
